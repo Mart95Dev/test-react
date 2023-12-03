@@ -1,4 +1,5 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
+
 export default function Banner({ imageBanner, children }) {
   return (
     <>
@@ -9,3 +10,8 @@ export default function Banner({ imageBanner, children }) {
     </>
   );
 }
+
+Banner.propTypes = {
+  imageBanner: PropTypes.string,
+  children: PropTypes.element,
+};
